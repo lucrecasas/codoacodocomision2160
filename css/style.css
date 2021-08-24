@@ -1,20 +1,29 @@
 /* selector{ propiedad:valor; propiedad:valor;} */
+html{
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.miestilo{
+    font-family: 'Open Sans', sans-serif;
+}
 body{
     background-color: bisque;
 }
 h1{
     background-color: black;
     color: white !important;
+    text-align: center;
 }
 li{
     display:inline;
-    background-color: blue;
+    background-color: rgba(53, 53, 238, 0.904);
     border: 1px solid black;
     padding: 10px;
     color: white;
     cursor: pointer;
     box-shadow: 4px 5px 3px black;
     margin: 10px 10px;
+
 }
 #padre, ul{
     background-color: black;
@@ -28,4 +37,34 @@ li{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-
+h2{
+    text-align: center;
+}
+p{
+    text-align: justify;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+}
+#init, #add, #status, #commit, #push{ 
+    width: 18%;
+    float: left;
+    border: 5px solid black;
+    box-sizing: border-box;
+    margin: 5px;
+    height: 800px;
+}
+span{
+    background-color: green;
+    color: yellow;
+    display: block;
+}
+div{
+    display: inline;
+}
+div#init {
+    background-color: violet;
+}
+div#init h2{
+    background-color: rgb(255, 0, 157);
+}
