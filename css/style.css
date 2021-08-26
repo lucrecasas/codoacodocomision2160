@@ -23,20 +23,31 @@ li{
     cursor: pointer;
     box-shadow: 4px 5px 3px black;
     margin: 10px 10px;
-
+}
+li:hover{
+    background-color: transparent;
+    box-shadow: 5px 4px 0px white;
 }
 #padre, ul{
     background-color: black;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; /* DISTINTAS CLASES:Flex-start, flex-end, center, space around, space-between*/
+    position: absolute; /*DISTINTOS TIPOS DE POSICION: fixed, absolute*/
+    top: 100px;
+    left: 550px;
 }
+
 .hija{
     background-color: aqua;
     width: 150px;
     height: 150px;
     margin-top: 50px;
     margin-bottom: 50px;
-}
+    border-radius: 10px; /*permite redondear las puntas de los cuadrados*/
+    }
+    .hija:hover{/*HOVER:sirve para cambiar la imagen cuando apoyamos el cursos*/
+        
+    }
 h2{
     text-align: center;
 }
@@ -49,7 +60,9 @@ p{
 #init, #add, #status, #commit, #push{ 
     width: 18%;
     float: left;
-    border: 5px solid black;
+    border-bottom:5px solid black; 
+    border-right: 5px dotted black;
+    border-top: 5px double black;
     box-sizing: border-box;
     margin: 5px;
     height: 800px;
