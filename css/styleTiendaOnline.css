@@ -21,8 +21,6 @@ nav ol li{
     display: inline; /*permite poner el menu en linea horizontal y eliminar los numeros o viñetas*/
     padding: 10px;
 
-    
-
 }
 h1{
     background-color: rgba(255, 255, 255, 0.541);

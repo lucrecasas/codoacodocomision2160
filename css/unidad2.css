@@ -1,0 +1,12 @@
+.rojo{
+    background-color: red;
+    color: yellow;
+    width: 320px;
+    height: 320px;
+    float: left;
+    margin: 3px;
+}
+.negro{
+    background-color: black;
+    color: white;
+}
