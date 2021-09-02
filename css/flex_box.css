@@ -1,0 +1,47 @@
+body{
+    overflow: hidden;
+}
+.principal{
+    display: flex ; /*por defecto viene el display box*/
+    flex-wrap: wrap; /**/
+    justify-content: flex-end; /*FLEX END:los corre todos hacia la derecha*/
+    justify-content: space-around; /*va a funcionar siempre que tengamos espacio entre los elementos*/
+    justify-content: space-between;
+    justify-content: space-evenly;
+}
+.cuadro{
+    background-color: blueviolet;
+    width: 20%;
+    /* height: 200px; */
+    /* float: left; /* cuando utilizamos float hay que estar pendiente del 100% */
+    /*border: 80px solid white;
+    box-sizing: border-box;
+    padding: ;*/
+   overflow:auto;
+}
+.cuadro p{
+    font-size: x-large;
+}
+.cuadro p::before{
+    content: 'A mi no me pueden copiar';
+}
+.cuadro p::after{
+    content: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam commodi, iste officiis repellendus alias nihil ea, quasi quas numquam odit accusamus libero inventore! Eius placeat blanditiis ratione eligendi architecto neque.';
+}
+.cuadro p::first-letter{
+    color: white;
+    background-color: black;
+    padding: 2px;
+}
+footer{ /*El footer siempre es in block por defecto, si configuramos position en absoluto se convierte a in line*/
+    background-color: grey;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+}
+.letra{
+    font-family:'Noto Sans JP', sans-serif;;
+}

@@ -1,3 +1,6 @@
+*{
+    margin: 0px;
+}
 header{
     background-image: url('../img/header.jpg');
     /*background repeat, backgrpund no repeat*/
@@ -7,9 +10,9 @@ header{
     justify-content: center;
     position: fixed;
     opacity: ;
-    
-    
-    
+}
+body{
+    overflow: hidden;
 }
 nav{
     position: fixed;
@@ -17,10 +20,25 @@ nav{
 }
 nav ol li{
     background-color: gray;
-    margin: 5px;
+    /* margin: 5px; */
     display: inline; /*permite poner el menu en linea horizontal y eliminar los numeros o viñetas*/
-    padding: 10px;
+    padding: 15px;
+    margin: 5px -2px;
+    opacity: 1;
 
+}
+nav ol li:hover{
+    background-color: gray;
+    /* margin: 5px; */
+    display: inline; /*permite poner el menu en linea horizontal y eliminar los numeros o viñetas*/
+    padding: 15px;
+    margin: 5px -2px;
+    opacity: 0.5;
+
+}
+nav ol li a{
+    text-decoration: none;
+    color: black;
 }
 h1{
     background-color: rgba(255, 255, 255, 0.541);
@@ -30,11 +48,19 @@ h1{
 }
 article{
     background: linear-gradient(grey, pink);
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
     height: 700px;
     padding-top: 200px;
 }
 article h2{
     text-align: center;
+}
+footer{ /*El footer siempre es in block por defecto, si configuramos position en absoluto se convierte a in line*/
+    background-color: grey;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
 }
