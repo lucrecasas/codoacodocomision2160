@@ -1,0 +1,90 @@
+#insignia{
+    color: chartreuse; /* ponemos COLOR y no background color ya que le vamos a cambiar el color a la forma*/
+    /*background-color: black; si agregamos background color le vamos a agregar un fondo unicamente a ese icono o animacion*/
+    /*tambien podemos agregarle padding (margen a ese fondo) */
+    animation-name: insignia;
+    animation-duration: 5s;
+}
+@keyframes insignia{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#flecha{
+    color: coral;
+    animation-name: flecha;
+    animation-duration: 6s; /*INDICA LA DURACION DE LA ANIMACION, cuando termina vuelve al color original*/
+    animation-iteration-count: infinite; /*ITERACION Y CONTADOR: permite que la animacion se repita la cantidad de veces que le indiquemos mientras el usuario este en la pagina, puede ser infinito o cantidad de veces determinadas, por ej: 2*/
+    animation-delay: 4s; /* una vez que se carga la pagina espera el tiempo indicado para empezar a ejecutrar la animacion*/
+    animation-direction: reverse; /*es la direccion en la que se va a ejecutar la animacion*/
+    position: absolute;
+    left: 200px;
+}
+/*Para crear animaciones vamos a escribir @'keyframe' que son los fotogramas que van a ir haciendo las animaciones, luegio se escribe el nombre del elemento que queremos animar */
+/*existen 3 maneras de hacerlo*/
+/*para que esta keyframe funcione debemos ir a ese elemento '#flecha' y agregar un animation-name y asegurarnos que tanto el elemento, keyframe y animation-name esten todo ESCRITOS IGUAL*/
+
+@keyframes flecha{
+    from{ color: darkcyan;top: 50px;}
+    to{color: coral;top: 250px;}
+}
+.cuadros{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+}
+#uno, #tres{
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 0px;
+    animation-name: mover;
+    animation-duration: 5s;
+}
+@keyframes mover{
+    25%{top: 200px;}
+    50%{left: 220px;}
+    75%{top: 0px;}
+    100%{left: 20px;}
+}
+/*A un elemento podemos agregarle varias animaciones*/
+#dos,#cuatro{
+    position: relative;
+    animation-name: mover, flecha;
+    animation-duration: 5s, 6s;
+    animation-iteration-count: infinite, infinite;
+    animation-delay: 0s, 5s;
+}
+ul li {
+    display: inline;
+    padding: 10px;
+    background-color: yellowgreen;
+    color: black;
+}
+ul li:hover{
+   animation-name: menu;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+
+}
+@keyframes menu{
+    0%{
+        padding: 10px;
+        background-color: yellowgreen;
+        color: black;
+    }
+    50%{
+        padding: 15px;
+        background-color: rgba(153, 205, 50, 0.473);
+        color: white;
+        box-shadow: 5px 5px 5px black;
+        border-radius: 50px;
+    }
+    100%{
+        padding: 10px;
+        background-color: yellowgreen;
+        color: black;
+    }
+}
