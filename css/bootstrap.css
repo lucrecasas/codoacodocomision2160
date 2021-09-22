@@ -1,0 +1,15 @@
+body{
+    background-image: url('../img/fondo.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.btn-primary{
+    background-color: chartreuse;
+}
+.btn-primary:hover{
+    background-color: forestgreen;
+}
+.bg-otra{
+    background-color: fuchsia;
+}
