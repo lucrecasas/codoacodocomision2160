@@ -1,0 +1,17 @@
+  /*esto hay que hacerlo cuando usamos css normal, porque bootsrap lo hace por defecto por lo que esto no 
+    necesitamos hacerlo, a su vez que nos empieza a cambiar los tipos de fuentes
+    *{
+        box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    }
+    */
+
+nav img{
+    width: 120px;
+}
+footer{
+    background-color: black;
+    color: white;
+    
+}
