@@ -1,15 +1,17 @@
-alert('soy una ventana emergente!');
+alert('soy una ventana emergente!'); //es una venta emergente//
 console.log('Hola soy un mensaje en la consola')
 /*VARIABLES: son espacio de memoria*/
+/* palabra reservada (var, let, const)+nombre de la variable = le asignamos el valor*/
+
 var nombre_variable;/*siempre ocupa espacio en la memoria*/
-let otra_variable = "hola"; /*solo va a ocupar espacio en la memoria cuando se esta utilizando*/
-const pi = 3.1416;
+let otra_variable = "hola"; /* string: union de varios caracteres*/ /*solo va a ocupar espacio en la memoria cuando se esta utilizando*/
+const pi = 3.1416; /* tipo enteros y float*/
 let num2=18;
 let hayClases=true /*esto es una variable booleana*/
-let terminoLaClase=false
+let terminoLaClase=false /*esto es una variable booleana*/
 
 /*TIPOS DE VARIABLES:
-numero, array, string, boolean, chart, function, null, undefined
+numero, array, string, boolean, chart, function, null, undefined (no es un tipo si no que el valor es indefinido)
 */
 
 console.log(pi*num2);
@@ -46,4 +48,36 @@ if(nombre_variable==undefined){
     elemento.innerHTML+= "<p>Luis Navas</p><p>Lucrecia Casas</p><p>Damian</p><p>Estela</p><p>juan</p>"
     elemento.style.backgroundColor="blue"
     elemento.style.color="white"
+}
+/*
+let mensaje = prompt("Introcuce tu mensaje");
+elemento.innerHTML+= "<h3>" +mensaje+ "</h3>" ; /* inner es una propiedad que va a recibir string 
+                                            para que funcione hay que incorporar la etiqueta 
+                                            dentro de las comillas.*/
+
+/*elemento.innerHTML+="<div class=\"alert alert-success\" role=\"alert\">"+mensaje+"</div>";*/
+
+let menu = prompt("Selecciona el pedido:\n 1. Milansa con papas fritas\n 2. Milanesa napolitana\n 3. Fritas solas");
+
+if(menu==1){
+    elemento.innerHTML="<div class=\"alert alert-success\" role=\"alert\">Disfruta las milanesas con fritas</div>";
+
+}else if(menu==2){
+    elemento.innerHTML="<div class=\"alert alert-success\" role=\"alert\">Disfruta la milanesa napolitana</div>";
+
+}else if (menu==3) {
+    elemento.innerHTML="<div class=\"alert alert-success\" role=\"alert\">Disfruta las papas fritas</div>";
+
+}else{
+    alert('Debes elegir alguna opcion del menu')
+    let menu = prompt("Selecciona el pedido:\n 1. Milansa con papas fritas\n 2. Milanesa napolitana\n 3. Fritas solas");
+
+}
+
+switch (menu) {
+    case 1:
+        break; 
+
+    default:
+        break; 
 }
