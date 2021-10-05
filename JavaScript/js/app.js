@@ -75,9 +75,16 @@ if(menu==1){
 }
 
 switch (menu) {
-    case 1:
+    case '1': /*NO FUNCIONA CUANDO ELIGEN LA OPCION UNO*/ 
+        elemento.innerHTML="<div class=\"alert alert-success\" role=\"alert\">Disfruta las milanesas con fritas</div>";
         break; 
 
     default:
+        elemento.innerHTML="<div class=\"alert alert-success\" role=\"alert\">Debes elegir alguna opcion del menu</div>";
         break; 
 }
+/*la funcion parseInt conviere un entero a numero*/ 
+let num = parseInt(prompt ("Ingresa el primer numero")); 
+let num3 = parseInt( prompt("Ingresa el segundo numero"));
+
+let resultado = "EL resultado de la suma de  " +num+ "+" +num3+ "es: " +num+num3;
