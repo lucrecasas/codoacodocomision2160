@@ -79,7 +79,7 @@ const comprarTickets=()=>{
                         </div>
                         <div class="form-row d-flex">
                             <div class="form-group col">
-                                <button type="reset" class="btn btn-codo btn-block">Borrar</button>
+                                <button type="reset" onclick="limpiar()" class="btn btn-codo btn-block">Borrar</button>
                             </div>
                             <div class="form-group col">
                                 <button type="button" id="botonCalcular" class="btn btn-codo btn-block" data-bs-toggle="modal" data-bs-target="#exampleModal"> Resumen</button>
@@ -140,16 +140,18 @@ const calcularvalor=(desc,cantEnt,comp)=>{
     if(desc == "estudiante"){
         resultado = (cantEnt * 200)*0.2; 
         descuento = (cantEnt * 200)*0.8; 
-        alert.innerHTML=" "
+        alert.innerHTML="Total a Pagar: $";
         alert.innerHTML+=resultado
     }else if(desc == "trainee"){
         resultado = (cantEnt * 200)*0.5;
         descuento = (cantEnt * 200)*0.5; 
+        alert.innerHTML="Total a Pagar: $";
         alert.innerHTML+=resultado
 
     }else{
         resultado = (cantEnt * 200)*0.85; 
         descuento = (cantEnt * 200)*0.15;
+        alert.innerHTML="Total a Pagar: $";
         alert.innerHTML+=resultado
     }
     modal.innerHTML=`
@@ -167,4 +169,8 @@ const calcularvalor=(desc,cantEnt,comp)=>{
 const creanNumTicket=()=>{
     return Math.floor (Math.random()*9);
     
+};
+const limpiar=()=>{
+    let alert = document.querySelector("#totalCompra");
+    alert.innerHTML="Total a Pagar: $";
 }
