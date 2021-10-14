@@ -1,0 +1,78 @@
+/* todo */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0 !important;
+    position: relative;
+  }
+  body {
+    padding-right: 2.7px;
+  }
+  
+  /* CONFIGURACION NAV*/
+  nav {
+    background-color: #393d42;
+  }
+
+  /* logo */
+  nav img{
+      width: 80px;
+  }
+  
+  /* Comprar tickets verde */
+  .comprarticketsVerde {
+    color: rgba(42, 252, 70, 0.514) !important;
+  }
+  
+  
+  /* CONFIGURACION CAROUSEL*/
+  .carousel-inner {
+    filter: brightness(60%);
+  }
+  
+  /* Color Botones Carousel */
+  .button1 {
+    border: 1px solid white !important;
+    
+  }
+  
+  .button2 {
+    background-color: rgba(42, 252, 70, 0.514);
+  }
+  
+
+ 
+
+  
+  /* CONFIGURACION CARDS */
+ 
+  /* Badge java */
+  .java {
+    background-color:#ffc411 !important;
+    color: black;
+    font-size: 10px;
+  }
+  
+  /* badge react */
+  .react {
+    background-color: #27aabe !important;
+    font-size: 10px;
+  }
+  
+  
+/*CONFIGURACION ULTIMO FORM*/
+.btn-enviar{
+  background-color: greenyellow;
+    color: white;
+    margin: 10px;
+    width: 100%
+}
+}
+  
+footer{
+    background-image: linear-gradient(to right, rgb(34, 33, 33), #174966)
+    
+    
+
+
+}

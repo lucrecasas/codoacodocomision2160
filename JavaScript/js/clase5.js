@@ -91,7 +91,9 @@ crearForm();
 /*object{propietario, nombre, especie, raza,edad,peso, imagen, tipoConsulta} */
 const mostrarMascotas=()=>{
     mascotas.forEach(m=>{
+        elemento.innerHTML="";
         elemento.innerHTML=`
+        <div call="col-12"
     <div class="card" style="width: 18rem;">
     <img src="${m.imagen}" class="card-img-top" alt="...">
     <div class="card-body">
