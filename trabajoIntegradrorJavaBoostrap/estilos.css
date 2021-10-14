@@ -36,14 +36,14 @@
   /* Color Botones Carousel */
   .button1 {
     border: 1px solid white !important;
-    
-    
+        
   }
   
   .button2 {
     background-color: rgba(42, 252, 70, 0.514);
     
   }
+
   .aviso{
     position: relative;
     top: 200px;
@@ -51,9 +51,16 @@
   }
 
  
-
   
   /* CONFIGURACION CARDS */
+  #losOradores{
+    border:dimgray !important;
+    margin-bottom: 30px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
  
   /* Badge java */
   .java {
@@ -69,12 +76,25 @@
   }
   
   /*CONFIGURACION HONOLULU*/
+  .honolulu{
+    margin-right: 1px;
+    padding-right: 0px;
+    width: 50%;
+
+  }
   .Bsas{
-    background-color: darkslategrey;
+    background-color: #353a40;
     color: white;
   }
+  .text {
+    font-size: 13px;
+}
   
 /*CONFIGURACION ULTIMO FORM*/
+.puntos{
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
 .btn-enviar{
   background-color: greenyellow;
     color: white;
@@ -84,9 +104,14 @@
 
   
 footer{
-    background-image: linear-gradient(to right, rgb(34, 33, 33), #174966);
-    color: white;
-  
+  background: linear-gradient(rgb(11, 25, 51), rgb(17, 39, 80));
+  padding: 20px;
+  height: 80px;
+  text-align: center;
+  align-items: center !important;
+  vertical-align: middle !important;
+  font-size: small;
+  color:white;
     
     
 
