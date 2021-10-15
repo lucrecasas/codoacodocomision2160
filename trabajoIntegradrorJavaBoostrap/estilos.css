@@ -26,6 +26,7 @@
   
   
   /* CONFIGURACION CAROUSEL*/
+  
   .opac{
     opacity:0.5;
   }
@@ -89,6 +90,10 @@
   .text {
     font-size: 13px;
 }
+.btn-conoceMas{
+  border: 1px solid white !important;
+
+}
   
 /*CONFIGURACION ULTIMO FORM*/
 .puntos{
@@ -104,7 +109,7 @@
 
   
 footer{
-  background: linear-gradient(rgb(11, 25, 51), rgb(17, 39, 80));
+  background: linear-gradient(rgb(11, 25, 51), rgb(23, 49, 99));
   padding: 20px;
   height: 80px;
   text-align: center;
