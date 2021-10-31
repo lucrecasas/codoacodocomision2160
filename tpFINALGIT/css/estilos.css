@@ -1,0 +1,139 @@
+/* todo */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0 !important;
+    position: relative;
+  }
+  body {
+    padding-right: 2.7px;
+  }
+  
+  /* CONFIGURACION NAV*/
+  nav {
+    background-color: #393d42;
+  }
+
+  /* logo */
+  nav img{
+      width: 80px;
+  }
+  
+  /* Comprar tickets verde */
+  .comprarticketsVerde {
+    color: rgba(42, 252, 70, 0.514) !important;
+  }
+  
+  
+  /* CONFIGURACION CAROUSEL*/
+  
+  .opac{
+    opacity:0.5;
+  }
+  .carousel-item {
+    background-color: black;
+  }
+  
+  /* Color Botones Carousel */
+  .button1 {
+    border: 1px solid white !important;
+        
+  }
+  
+  .button2 {
+    background-color: rgba(42, 252, 70, 0.514);
+    
+  }
+
+  .aviso{
+    position: relative;
+    top: 200px;
+    margin-right: 10px;
+  }
+
+ 
+  
+  /* CONFIGURACION CARDS */
+  #losOradores{
+    border:dimgray !important;
+    margin-bottom: 30px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+ 
+  /* Badge java */
+  .java {
+    background-color:#ffc411 !important;
+    color: black;
+    font-size: 10px;
+  }
+  
+  /* badge react */
+  .react {
+    background-color: #27aabe !important;
+    font-size: 10px;
+  }
+  
+  /*CONFIGURACION HONOLULU*/
+  .honolulu{
+    margin-right: 1px;
+    padding-right: 0px;
+    width: 50%;
+
+  }
+  .Bsas{
+    background-color: #353a40;
+    color: white;
+  }
+  .text {
+    font-size: 13px;
+}
+.btn-conoceMas{
+  border: 1px solid white !important;
+
+}
+  
+/*CONFIGURACION ULTIMO FORM*/
+.puntos{
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+.btn-enviar{
+  background-color: greenyellow;
+    color: white;
+    margin: 10px;
+    width: 100%
+}
+
+.btn-codo{
+  background-color: #97c93e;
+  color: white;
+  width: 98%;
+  margin: 2%;
+}
+
+#promos{
+  margin-bottom: 30px !important;
+  margin-bottom: 2px !important;
+  margin-left: 2px !important;
+  padding-right: 2px !important;
+  padding-left: 2px !important;
+
+}
+
+  
+footer{
+  background: linear-gradient(rgb(11, 25, 51), rgb(23, 49, 99));
+  padding: 20px;
+  height: 80px;
+  width: 100%;
+  bottom: 0px;
+  text-align: center;
+  align-items: center !important;
+  vertical-align: middle !important;
+  font-size: small;
+  color:white;
+    
+}
