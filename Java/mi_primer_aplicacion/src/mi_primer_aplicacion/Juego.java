@@ -35,5 +35,5 @@ public class Juego {
     }
     String mostrarSaludo(){
         return "Hola soy: "+this.personaje + " y tengo " + this.vidas;
-    }
+    } 
 }
