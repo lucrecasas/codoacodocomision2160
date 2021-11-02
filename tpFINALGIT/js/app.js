@@ -7,9 +7,9 @@ const comprarTickets=()=>{
             <div class="container">
                 <div class="row">"
                     <div class="col col-md-10  offset-md-1 col-lg-8 offset-lg-2 pt-2 p-1">
-                        <div class="card-group">
+                        <div class="card-group bd">
                             <div class="card">
-                                <div class="card-body border border-primary mr-1">
+                                <div class="card-body border border-primary me-1 ">
                                     <h5 class="card-tittle text-center">Estudiante</h5>
                                     <p class="card-text text-center">Tienen un descuento</p>
                                     <p class="card-tittle text-center font-weight-bold">80%</p>
@@ -18,7 +18,7 @@ const comprarTickets=()=>{
                             </div>
 
                             <div class="card">
-                                <div class="card-body border border-success mr-1">
+                                <div class="card-body border border-success me-1">
                                     <h5 class="card-tittle text-center">Trainee</h5>
                                     <p class="card-text text-center">Tienen un descuento</p>
                                     <p class="card-tittle text-center font-weight-bold">50%</p>
@@ -27,7 +27,7 @@ const comprarTickets=()=>{
                             </div>
 
                             <div class="card">
-                                <div class="card-body border border-warning mr-1">
+                                <div class="card-body border border-warning me-1">
                                     <h5 class="card-tittle text-center">Junior</h5>
                                     <p class="card-text text-center">Tienen un descuento</p>
                                     <p class="card-tittle text-center font-weight-bold">15%</p>
@@ -55,21 +55,21 @@ const comprarTickets=()=>{
                         <div class="form-row">
                         <div class="d-flex">
                             <div class="form-group col-6 col-md-6">
-                                <input type="text" class="form-control" placeholder="Nombre">
+                                <input type="text" class="form-control m-1" placeholder="Nombre">
                             </div>
                             <div class="form-group col-6 col-md-6">
-                                <input type="text" class="form-control" placeholder="Apellido">
+                                <input type="text" class="form-control m-1" placeholder="Apellido">
                             </div>
                             </div>
                             <div class="form-group col-12 col-md-12">
-                                <input type="email" class="form-control" placeholder="Correo">
+                                <input type="email" class="form-control m-1" placeholder="Correo">
                             </div>
-                            <div class="d-flex">
-                            <div class="form-group col-12 col-md-6">
+                            <div class="d-flex justify-content-center">
+                            <div class="form-group  col-md-6 me-1">
                                 <label for="">Cantidad</label>
-                                <input id="cantidadEntrada" type="text" class="form-control" placeholder="Cantidad">
+                                <input id="cantidadEntrada" type="text" class="form-control m-1" placeholder="Cantidad">
                             </div>
-                            <div class="form-group col-12 col-md-6">
+                            <div class="form-group  col-md-6 me-1">
                                 <label for="">Categoria</label>
                                 <select class="form-select" id="inputState">
                                     <option value="estudiante" selected>Estudiante</option>
