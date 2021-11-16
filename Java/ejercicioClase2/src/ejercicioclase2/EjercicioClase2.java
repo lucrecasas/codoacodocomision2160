@@ -1,4 +1,3 @@
-
 package ejercicioclase2;
 
 import java.util.Scanner;
