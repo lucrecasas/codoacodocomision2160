@@ -38,8 +38,8 @@
                             
 
                             for(int a=0; a<resultado.size();a++){
-                                String ruta = "AlumnosController?accion=modificar&id"  + resultado.get(a).getId();
-                                String rutaE= "AlumnosController?accion=eliminar&id"+ resultado.get(a).getId();
+                                String ruta = "AlumnosController?accion=modificar&id="  + resultado.get(a).getId();
+                                String rutaE= "AlumnosController?accion=eliminar&id="+ resultado.get(a).getId();
                                 %>
                                 <tr>
                                     <td><%=resultado.get(a).getId()%></td>
