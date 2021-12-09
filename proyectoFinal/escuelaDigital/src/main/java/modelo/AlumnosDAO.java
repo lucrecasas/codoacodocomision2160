@@ -78,9 +78,7 @@ public class AlumnosDAO {
      public boolean insertarAlumno(Alumnos alumno){
          PreparedStatement ps;
          try {
-             ps = conexion.prepareStatement("INSERT INTO participantes"
-                     + "(nombres,apellidos,email,telefono)"
-                     + "VALUES (?,?,?,?");
+             ps = conexion.prepareStatement("INSERT INTO participantes(nombres,apellidos,email,telefono)VALUES (?,?,?,?)");
              ps.setString(1, alumno.getNombres());
              ps.setString(2, alumno.getApellidos());
              ps.setString(3, alumno.getEmail());
@@ -119,8 +117,7 @@ public class AlumnosDAO {
      public boolean eliminarAlumno(int _id){
          PreparedStatement ps;
           try{
-            ps = conexion.prepareStatement("DELETE * FROM "
-                    + "participantes WHERE id=?");
+            ps = conexion.prepareStatement("DELETE FROM participantes WHERE id=?");
             ps.setInt(1,_id);
             ps.execute();
             return true;
