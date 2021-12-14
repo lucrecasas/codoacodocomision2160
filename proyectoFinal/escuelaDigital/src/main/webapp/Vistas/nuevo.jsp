@@ -24,7 +24,8 @@
                     <div class="mb-3">
                         <label for="apellido" class="form-label">Apellido</label>
                         <input type="text" class="form-control" id="apellido" name="apellido"/>
-                    </div><div class="mb-3">
+                    </div>
+                    <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
                         <input type="text" class="form-control" id="email" name="email"/>
                     </div>

@@ -28,7 +28,7 @@ public class AlumnosController extends HttpServlet {
             RequestDispatcher dispatcher =null;
             accion = request.getParameter("accion");
             if (accion == null || accion.isEmpty()){
-                dispatcher = request.getRequestDispatcher("Vistas/alumnos.jsp");
+                dispatcher = request.getRequestDispatcher("/");
             
             
             }else if(accion.equals("modificar")){
@@ -63,6 +63,19 @@ public class AlumnosController extends HttpServlet {
                 alumnosDao.eliminarAlumno(id);
                 dispatcher = request.getRequestDispatcher("Vistas/alumnos.jsp");
                 
+            }else if(accion.equals("ingresar")){
+                String usuario = request.getParameter("email");
+                String clave = request.getParameter("pass");
+                boolean ingresa=alumnosDao.ingresarUsuario(usuario, clave);
+               
+                if(ingresa){
+                    dispatcher = request.getRequestDispatcher("Vistas/alumnos.jsp");
+                }else{
+                    dispatcher = request.getRequestDispatcher("/index.jsp");
+                
+                }
+                
+            
             }
             dispatcher.forward(request, response);
         
